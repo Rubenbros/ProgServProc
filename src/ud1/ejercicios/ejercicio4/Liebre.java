@@ -1,4 +1,4 @@
-package ud1.ejercicios.ejercicio5;
+package ud1.ejercicios.ejercicio4;
 
 public class Liebre extends Thread {
 

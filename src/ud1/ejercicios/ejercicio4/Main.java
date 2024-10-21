@@ -1,4 +1,4 @@
-package ud1.ejercicios.ejercicio5;
+package ud1.ejercicios.ejercicio4;
 
 //Implemente una simulación de la fabula que cuenta la carrera entre la liebre y la tortuga.
 //Para hacerlo más interesante la carrera será cuesta arriba por una pista resbaladiza, de modo
