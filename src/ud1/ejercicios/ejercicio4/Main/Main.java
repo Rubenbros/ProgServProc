@@ -1,6 +1,4 @@
-package ud1.ejercicios.ejercicio3.Main;
-
-import java.util.Arrays;
+package ud1.ejercicios.ejercicio4.Main;
 
 //Implementar un programa que ordena un array de números enteros de manera paralela utilizando varios hilos. Cada hilo
 //ordenará un segmento del array, y luego se fusionarán los segmentos ordenados en un solo array.

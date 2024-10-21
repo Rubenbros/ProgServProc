@@ -1,4 +1,4 @@
-package ud1.ejercicios.ejercicio3.Main;
+package ud1.ejercicios.ejercicio4.Main;
 
 import java.util.Arrays;
 
