@@ -84,9 +84,9 @@ public class Organizador extends Thread {
             synchronized (carrera.lockTortuga) {
                 carrera.turnoTortuga = true;
                 carrera.lockTortuga.notifyAll();
+                carrera.turnoLiebre = true;
+                carrera.lockLiebre.notifyAll();
             }
-            carrera.turnoLiebre = true;
-            carrera.lockLiebre.notifyAll();
         }
     }
 
