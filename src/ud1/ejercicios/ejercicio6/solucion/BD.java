@@ -3,9 +3,6 @@ package ud1.ejercicios.ejercicio6.solucion;
 import ud1.ejercicios.ejercicio5.solucion.Shared;
 
 import java.util.Random;
-import java.util.concurrent.locks.Lock;
-
-import static ud1.ejercicios.ejercicio2.solucion.Main.lock;
 
 public class BD extends Thread{
 
