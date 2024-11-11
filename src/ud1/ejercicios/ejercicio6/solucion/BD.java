@@ -44,7 +44,6 @@ public class BD extends Thread{
         synchronized (shared.lock) {
             while (!shared.turnoBD) {
                 try {
-                    System.out.println("BD espera numero");
                     shared.lock.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
