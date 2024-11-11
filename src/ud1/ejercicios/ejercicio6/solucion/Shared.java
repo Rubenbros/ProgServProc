@@ -1,4 +1,4 @@
-package ud1.ejercicios.ejercicio5.solucion;
+package ud1.ejercicios.ejercicio6.solucion;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

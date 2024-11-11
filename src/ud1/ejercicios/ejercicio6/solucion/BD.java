@@ -1,7 +1,5 @@
 package ud1.ejercicios.ejercicio6.solucion;
 
-import ud1.ejercicios.ejercicio5.solucion.Shared;
-
 import java.util.Random;
 
 public class BD extends Thread{
