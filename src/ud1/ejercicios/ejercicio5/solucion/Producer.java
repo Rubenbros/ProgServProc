@@ -1,45 +1,36 @@
 package ud1.ejercicios.ejercicio5.solucion;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.List;
 import java.util.concurrent.locks.Lock;
 
 public class Producer extends Thread {
 
-    private ArrayList<Integer> list;
     private int nMax;
+    private List<Integer> numeros;
     private Lock lock;
 
-    public Producer(ArrayList<Integer> list, int nMax, Lock lock) {
-        this.list = list;
+    public Producer(int nMax, List<Integer> numeros, Lock lock) {
         this.nMax = nMax;
+        this.numeros = numeros;
         this.lock = lock;
     }
 
     @Override
     public void run() {
         while (true) {
-            int num = generarNumero();
+            int num = (int) (Math.random() * 100);
             synchronized (lock) {
-                try {
-                    while (list.size() == nMax) {
-                        lock.wait(); // Espera si la lista está llena
+                while(numeros.size() == nMax) {
+                    try {
+                        lock.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
-                    list.add(num); // Añade el número a la lista
-                    System.out.println("Producido: " + num);
-
-                    // Notifica al consumidor que hay un nuevo elemento
-                    lock.notifyAll();
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                    break;
                 }
+                numeros.add(num);
+                System.out.println("Produced: " + num);
+                lock.notifyAll();
             }
         }
-    }
-
-    private int generarNumero() {
-        Random random = new Random();
-        return random.nextInt(100);
     }
 }
