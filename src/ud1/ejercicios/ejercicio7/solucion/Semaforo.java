@@ -1,6 +1,6 @@
-package ud1.ejercicios.ejercicio7;
+package ud1.ejercicios.ejercicio7.solucion;
 
-import ud1.ejercicios.ejercicio7.Carretera.Estado;
+import ud1.ejercicios.ejercicio7.solucion.Carretera.Estado;
 
 public class Semaforo extends Thread {
 
