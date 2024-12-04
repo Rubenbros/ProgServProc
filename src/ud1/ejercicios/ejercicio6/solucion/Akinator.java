@@ -1,9 +1,6 @@
 package ud1.ejercicios.ejercicio6.solucion;
 
-import ud1.ejercicios.ejercicio5.solucion.Shared;
-
 import java.util.Scanner;
-import java.util.concurrent.locks.Lock;
 
 public class Akinator extends Thread {
 

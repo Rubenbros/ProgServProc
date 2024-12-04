@@ -7,4 +7,8 @@ package ud1.ejercicios.ejercicio7;
 //El hilo del semáforo esta 2 segundos en rojo donde los coches no pueden pasar
 //El hilo del semáforo esta 1 segundo en naranja donde los coches tienen un 50% de posibilidades de pasar o quedarse esperando
 public class Main {
+
+    public static void main(String[] args) {
+
+    }
 }
